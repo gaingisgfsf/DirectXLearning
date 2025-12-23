@@ -23,7 +23,6 @@ add_executable(DirectXLearning WIN32 ${SOURCES})
 target_link_libraries(DirectXLearning
     d3d11.lib
     d3dcompiler.lib
-    dxgi.lib
 )
 
 # Set output directory

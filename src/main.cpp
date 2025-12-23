@@ -136,7 +136,7 @@ bool InitDevice()
 
     // Create a render target view
     ID3D11Texture2D* pBackBuffer = nullptr;
-    hr = g_pSwapChain->GetBuffer(0, __uuidof(ID3D11Texture2D), (LPVOID*)&pBackBuffer);
+    hr = g_pSwapChain->GetBuffer(0, __uuidof(ID3D11Texture2D), reinterpret_cast<void**>(&pBackBuffer));
     if (FAILED(hr))
         return false;
 
