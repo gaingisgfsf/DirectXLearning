@@ -63,3 +63,6 @@ CMakeCache.txt
 CMakeFiles/
 cmake_install.cmake
 Makefile
+
+# CodeQL
+_codeql_detected_source_root
